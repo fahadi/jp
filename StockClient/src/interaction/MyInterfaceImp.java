@@ -125,11 +125,13 @@ public class MyInterfaceImp implements MyInterface{
                     }else if(secParam.equals(DIVIDEND)){
                     	Item item = itemList.get(listSelection);
                     	double yield = (double) (item.getLastDividend()/item.getStockPrice());
-                    	System.out.println("The yield is %.2f:" +yield);
+                    	System.out.printf("The yield is %.2f",yield);
+                        System.out.println("");
                     }else if(secParam.equals(PE_RATION)){
                     	Item item = itemList.get(listSelection);
                     	double yield = (double) (item.getStockPrice()/item.getLastDividend());
-                    	System.out.println("The P/E ratio is %.2f:" +yield);
+                    	System.out.printf("The P/E ratio is %.2f",yield);
+                        System.out.println("");
                     }
                     
                 }
